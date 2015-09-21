@@ -5,5 +5,10 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: '[name].js'
+  },
+  module: {
+      loaders: [
+          { test: /\.html$/, loader: 'html-loader' },
+      ]
   }
 }
