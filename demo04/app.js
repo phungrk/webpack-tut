@@ -1,2 +1,2 @@
-var html = require('./static.html');
-document.body.innerHTML = html;
+var container = require('./container.html');
+document.body.innerHTML = container;
