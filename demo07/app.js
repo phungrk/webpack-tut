@@ -1,9 +1,9 @@
 require('./style.css');
 
-var container = require('./container.html');
-return container({title: "world"});
+var containerTpl = require('./container.html');
+var containerHTML = containerTpl({title: "WebPack is Cool"});
 
-document.body.innerHTML = container;
+document.body.innerHTML = containerHTML;
 
 var img = new Image();
 img.src = require('./color.png');
